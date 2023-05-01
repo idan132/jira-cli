@@ -15,15 +15,23 @@ Thats it! You are ready to run and use the script
 ## Usage
 #### To use the tool:
 
-Run the script in a terminal or command prompt.
-The script will display a title "Jira CLI" and list available Epics in the given Jira project.
-The user will be prompted to enter the number of business days they want to plan ahead.
-For each business day, the user will be asked if they want to skip tasks for that day. If not, they can enter their tasks for that day.
+1- Run the script in a terminal or command prompt.
+
+2- The script will display a title "Jira CLI" and list available Epics in the given Jira project.
+
+3- The user will be prompted to enter the number of business days they want to plan ahead.
+
+4- For each business day, the user will be asked if they want to skip tasks for that day. If not, they can enter their tasks for that day.
 Tasks should be separated by a semicolon (;)
-Users can add an optional duration (in business days) for each task by appending "| X" to the task description, where X is the number of days required to complete the task. If not specified, the due date will be set to the same day.
-For each task, the user will be prompted to enter its priority (e.g., High, Medium, Low).
-The user will be asked to choose an Epic for each task by entering the corresponding number or entering 0 to skip linking the task to an Epic.
-The script will create a Jira issue for each task with the provided information, including task description, start date, due date, priority, and Epic link (if chosen).
+
+5- Users can add an optional duration (in business days) for each task by appending "| X" to the task description, where X is the number of days required to complete the task. If not specified, the due date will be set to the same day.
+
+6- For each task, the user will be prompted to enter its priority (e.g. High (h), Medium (m), Low (l)).
+
+7- The user will be asked to choose an Epic for each task by entering the corresponding number or entering 0 to skip linking the task to an Epic.
+
+8- The script will create a Jira issue for each task with the provided information, including task description, start date, due date, priority, and Epic link (if chosen).
+
 By following these steps, the user can efficiently plan and manage their tasks in Jira using this CLI tool.
 
 ### Enjoy :)
