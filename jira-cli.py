@@ -6,12 +6,11 @@ import os
 import calendar  
 
 # Replace with your Jira server URL, email, and token
-jira_server = "https://bookmd.atlassian.net/"
-jira_email = "idanc@getvim.com"
-jira_token = "ATATT3xFfGF0FLpHhpKZGPPiBpH7cR8INC4Sh246orjyjD4adM6_LkZvKTtyHTt24c03fKhfBQ7tsJFUc8WgGQX0FUJTZFOfoBrAH8_PsezCTfu2Y_OWCNSTBEQoHAtb8g2kCmHwP1nBXN283fGlBYD_3_4oWEPzwFiSdYt584f3xunyHp75p8A=BF2A9FEA"
-
+jira_server = "YOUR_JIRA_URL"
+jira_email = "YOUR_EMAIL"
+jira_token = "YOUR_JIRA_API_TOKEN" #How to: https://docs.searchunify.com/Content/Content-Sources/Atlassian-Jira-Confluence-Authentication-Create-API-Token.htm
 # Replace with your project key
-project_key = "AS"
+project_key = "PROJECT_KEY"
 
 
 # Connect to Jira
@@ -28,7 +27,7 @@ def create_issue(summary, start_date, due_date, priority, epic_link, description
         "priority": {"name": priority},
     }
     if epic_link:
-        issue_dict["customfield_10016"] = epic_link  # Replace XXXXX with the actual custom field ID for Epic Link
+        issue_dict["customfield_XXXXX"] = epic_link  # Replace XXXXX with the actual custom field ID for Epic Link, feel free to modify to whatever custom field you like
 
     if description:
         issue_dict["description"] = description
